@@ -51,6 +51,23 @@ If you need to find if a value exists in an array, use **includes()**. Again, it
 If you need to find if any element satisfies the provided testing function, use **some()**.
 If you need to find all elements that satisfy the provided testing function, use **filter()**.
 
+Parameters
+
+- callbackFn:
+A function to execute for each element in the array. It should return a truthy value to indicate a matching element has been found, and a falsy value otherwise. The function is called with the following arguments:
+
+- element:
+The current element being processed in the array.
+
+- index:
+The index of the current element being processed in the array.
+
+- array:
+The array find() was called upon.
+
+- thisArg (Optional):
+A value to use as this when executing callbackFn. See iterative methods.
+
 ## Array.prototype.findIndex()
 The **findIndex()** method of Array instances returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
 
